@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Hello Fetch - Where's the ISS? </title>
+
+    <!-- Leaflet and CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Wait for page to load -->
+    <script async defer src="fetch.js"></script>
+</head>
+<body>
+    <h1> Where is the International Space Station? </h1>
+    <div>
+        <p> This page will update every
+            <span id="updatePeriodLabel"> X </span>
+            seconds using the API at:
+            <span id="apiLabel"></span>
+            .
+        </p>
+        <p> Refresh to erase path (previous locations of space station).</p>
+        <p> At <span id="updateTimeLabel"> date/time </span> the ISS was over the following coordinates:</p>
+        <p> ISS Latitude: <span id="iss-lat"></span></p>
+        <p> ISS Longitude: <span id="iss-lon"></span></p>
+    </div>
+
+    <div id="iss-map"></div>
+
+    <br>
+    <div>Space Station icon made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+</body>
+</html>
